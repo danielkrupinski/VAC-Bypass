@@ -26,11 +26,13 @@ If everything went right you should receive `VAC-Bypass.dll`  binary file.
 
 1. Close Steam client if open.
 1. Disconnect from the internet.
-1. Open Steam as Administrator.
-1. Inject `VAC-Bypass.dll` to `Steam.exe` process.
-1. After successful injection messagebox should appear.
-1. Connect to the internet.
+1. Run Steam as Administrator.
+1. Inject `VAC-Bypass.dll` into `Steam.exe` process.
+1. After successful injection messagebox saying `Initialization was successful!` should appear.
+1. Reconnect to the internet.
 1. Press `Retry` in steam window saying 'Could not connect to Steam servers'.
+
+It is mandatory to strictly follow each step of loading in order to make bypass work.
 
 ## Experiment
 Bypass has been tested with CS:GO game and Cheat Engine cheating program attached to the game process.
