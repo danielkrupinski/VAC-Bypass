@@ -15,7 +15,6 @@ git clone https://github.com/danielkrupinski/VAC-Bypass.git
 `VAC-Bypass` folder should have been succesfully created, containing all the source files.
 
 ### Compiling from source
-
 When you have equiped a copy of source code, next step is opening **VAC-Bypass.sln** in Microsoft Visual Studio 2019.
 
 Then change build configuration to `Release | x86` and simply press **Build solution**.
@@ -23,7 +22,6 @@ Then change build configuration to `Release | x86` and simply press **Build solu
 If everything went right you should receive `VAC-Bypass.dll`  binary file.
 
 ### Loading
-
 1. Close Steam client if open.
 1. Disconnect from the internet.
 1. Run Steam as Administrator.
@@ -38,10 +36,15 @@ It is mandatory to strictly follow each step of loading in order to make bypass 
 Bypass has been tested with CS:GO game and Cheat Engine cheating program attached to the game process.
 
 Without bypass:
-* [VAC Error](https://support.steampowered.com/kb_article.php?ref=2117-ilzv-2837), then VAC Ban within 1 hour.
+* [VAC Error](https://support.steampowered.com/kb_article.php?ref=2117-ilzv-2837), then VAC Ban within an hour.
 
 With bypass:
 * No [VAC Error](https://support.steampowered.com/kb_article.php?ref=2117-ilzv-2837) during play, no VAC Ban at all.
 
 ## See also
 - [VAC](https://github.com/danielkrupinski/vac) - source code of Valve Anti-Cheat obtained from disassembly of compiled modules
+
+## License
+> Copyright (c) 2019 Daniel Krupiński
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/mit-license.php) - see the [LICENSE](LICENSE) file for details.
