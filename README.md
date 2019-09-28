@@ -22,6 +22,8 @@ Then change build configuration to `Release | x86` and simply press **Build solu
 If everything went right you should receive `VAC-Bypass.dll`  binary file.
 
 ### Loading
+
+**Method 1**:
 1. Close Steam client if open.
 1. Disconnect from the internet.
 1. Run Steam as Administrator.
@@ -29,6 +31,9 @@ If everything went right you should receive `VAC-Bypass.dll`  binary file.
 1. After successful injection messagebox saying `Initialization was successful!` should appear.
 1. Reconnect to the internet.
 1. Press `Retry` in steam window saying 'Could not connect to Steam servers'.
+
+**Method 2**:
+(Coming soon)
 
 It is mandatory to strictly follow each step of loading in order to make bypass work.
 
