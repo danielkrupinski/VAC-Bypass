@@ -23,6 +23,8 @@ If everything went right you should receive `VAC-Bypass.dll`  binary file.
 
 ### Loading
 
+It is mandatory to strictly follow each step of loading in order to make bypass work.
+
 **Method 1**:
 1. Close Steam client if open.
 1. Disconnect from the internet.
@@ -35,8 +37,6 @@ If everything went right you should receive `VAC-Bypass.dll`  binary file.
 **Method 2**:
 1. Close Steam client if open.
 1. Compile and run [VAC Bypass Loader](https://github.com/danielkrupinski/VAC-Bypass-Loader)
-
-It is mandatory to strictly follow each step of loading in order to make bypass work.
 
 ## Experiment
 Bypass has been tested with CS:GO game and Cheat Engine cheating program attached to the game process.
