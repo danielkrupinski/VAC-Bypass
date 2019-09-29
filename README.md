@@ -47,6 +47,10 @@ Without bypass:
 With bypass:
 * No [VAC Error](https://support.steampowered.com/kb_article.php?ref=2117-ilzv-2837) during play, no VAC Ban at all.
 
+## How it works
+The goal is to make https://github.com/danielkrupinski/VAC/blob/2eeb40e38d0f0d7b828dbacb663ee00aef15c1ca/VAC/Utils.c#L187
+function return `false` then VAC aborts scan for cheats. It can be done by bypassing [this check](https://github.com/danielkrupinski/VAC/blob/2eeb40e38d0f0d7b828dbacb663ee00aef15c1ca/VAC/Utils.c#L195) for example.
+
 ## See also
 - [VAC](https://github.com/danielkrupinski/vac) - source code of Valve Anti-Cheat obtained from disassembly of compiled modules.
 - [VAC Bypass Loader](https://github.com/danielkrupinski/vac) - loader for VAC Bypas written in C.
