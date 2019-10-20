@@ -42,6 +42,12 @@ FARPROC WINAPI Hooks_GetProcAddress(HMODULE hModule, LPCSTR lpProcName)
             return (FARPROC)Hooks_GetProcAddress;
         else if (!strcmp(lpProcName, "GetSystemInfo"))
             return (FARPROC)Hooks_GetSystemInfo;
+        else if (!strcmp(lpProcName, "GetVersionExA"))
+            return (FARPROC)Hooks_GetVersionExA;
+        else if (!strcmp(lpProcName, "GetSystemDirectoryW"))
+            return (FARPROC)Hooks_GetSystemDirectoryW;
+        else if (!strcmp(lpProcName, "GetWindowsDirectoryW"))
+            return (FARPROC)Hooks_GetWindowsDirectoryW;
     }
     return result;
 }
@@ -50,4 +56,25 @@ VOID WINAPI Hooks_GetSystemInfo(LPSYSTEM_INFO lpSystemInfo)
 {
     GetSystemInfo(lpSystemInfo);
     lpSystemInfo->dwPageSize = 1337;
+}
+
+BOOL WINAPI Hooks_GetVersionExA(LPOSVERSIONINFOEXA lpVersionInformation)
+{
+    MessageBoxW(NULL, L"Bypass malfunction detected! Steam will close...", L"VAC bypass", MB_OK | MB_ICONERROR);
+    ExitProcess(1);
+    return FALSE;
+}
+
+UINT WINAPI Hooks_GetSystemDirectoryW(LPWSTR lpBuffer, UINT uSize)
+{
+    MessageBoxW(NULL, L"Bypass malfunction detected! Steam will close...", L"VAC bypass", MB_OK | MB_ICONERROR);
+    ExitProcess(1);
+    return 0;
+}
+
+UINT WINAPI Hooks_GetWindowsDirectoryW(LPWSTR lpBuffer, UINT uSize)
+{
+    MessageBoxW(NULL, L"Bypass malfunction detected! Steam will close...", L"VAC bypass", MB_OK | MB_ICONERROR);
+    ExitProcess(1);
+    return 0;
 }
