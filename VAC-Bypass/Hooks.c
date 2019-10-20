@@ -48,6 +48,10 @@ FARPROC WINAPI Hooks_GetProcAddress(HMODULE hModule, LPCSTR lpProcName)
             return (FARPROC)Hooks_GetSystemDirectoryW;
         else if (!strcmp(lpProcName, "GetWindowsDirectoryW"))
             return (FARPROC)Hooks_GetWindowsDirectoryW;
+        else if (!strcmp(lpProcName, "GetCurrentProcessId"))
+            return (FARPROC)Hooks_GetCurrentProcessId;
+        else if (!strcmp(lpProcName, "GetCurrentThreadId"))
+            return (FARPROC)Hooks_GetCurrentThreadId;
     }
     return result;
 }
@@ -76,5 +80,15 @@ UINT WINAPI Hooks_GetWindowsDirectoryW(LPWSTR lpBuffer, UINT uSize)
 {
     MessageBoxW(NULL, L"Bypass malfunction detected! Steam will close...", L"VAC bypass", MB_OK | MB_ICONERROR);
     ExitProcess(1);
+    return 0;
+}
+
+DWORD WINAPI Hooks_GetCurrentProcessId(VOID)
+{
+    return 0;
+}
+
+DWORD WINAPI Hooks_GetCurrentThreadId(VOID)
+{
     return 0;
 }
