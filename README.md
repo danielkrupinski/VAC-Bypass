@@ -53,7 +53,7 @@ function return `false` then VAC aborts scan for cheats. It can be done by bypas
 
 ## See also
 - [VAC](https://github.com/danielkrupinski/vac) - source code of Valve Anti-Cheat obtained from disassembly of compiled modules.
-- [VAC Bypass Loader](https://github.com/danielkrupinski/vac) - loader for VAC Bypas written in C.
+- [VAC Bypass Loader](https://github.com/danielkrupinski/VAC-Bypass-Loader) - loader for VAC Bypas written in C.
 
 ## License
 > Copyright (c) 2019 Daniel Krupiński
